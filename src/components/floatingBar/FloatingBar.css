@@ -1,0 +1,27 @@
+.floating-bar {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+.floating-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s, transform 0.3s;
+}
+.floating-item:hover {
+  background: #0056b3;
+  transform: translateY(-5px);
+}
