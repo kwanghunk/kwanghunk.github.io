@@ -25,6 +25,7 @@
 }
 
 .tech-icons {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -50,4 +51,5 @@
 .tech-name {
   font-size: 1rem;
   color: #333;
+  white-space: nowrap;
 }
