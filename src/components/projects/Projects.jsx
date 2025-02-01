@@ -37,10 +37,10 @@ const Projects = () => {
                 </div>
 
                 <div className="project-links">
-                  <a href={project.github} target="_blank" rel="noopener noerferrer" className="project-icon">
+                  <a href={project.github} target="_blank" rel="nooperner noreferrer" className="project-icon">
                     <IoLogoGithub size={30} />
                   </a>
-                  <a href={project.demo} target="_blank" rel="noopener noerferrer" className="project-icon">
+                  <a href={project.demo} target="_blank" rel="nooperner noreferrer" className="project-icon">
                     <IoLogoYoutube size={30} />
                   </a>
                 </div>
