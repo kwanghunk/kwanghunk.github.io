@@ -5,7 +5,7 @@ import "./TechStack.css";
 
 const TechStack = () => {
   return (
-    <Container className="techstack-container">
+    <Container id="tech-stack" className="techstack-container">
       <h2 className="section-title">{skills.title}</h2>
       
       {/* CORE and FRONT */}

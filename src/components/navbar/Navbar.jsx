@@ -14,9 +14,8 @@ const NavigationBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto navbar-links">
             <Nav.Link href="#home">About me</Nav.Link>
-            <Nav.Link href="#tech-stack">Tech Stack</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#experience">Experience</Nav.Link>
+            <Nav.Link href="#tech-stack">Tech Stack</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
           <a href="mailto:hosookkh@gmail.com" className="navbar-mail">

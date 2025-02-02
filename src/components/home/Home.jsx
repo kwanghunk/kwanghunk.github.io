@@ -6,7 +6,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <Container className="home-container">
+    <Container id="home" className="home-container">
       <h2 className="section-title">보유역량 요약</h2>
       <div className="ability-container">
         {home.possessionAbility.map((ability, index) => (

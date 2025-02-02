@@ -16,7 +16,7 @@ const Projects = () => {
   };
 
   return (
-    <Container className="projects-container">
+    <Container id="projects" className="projects-container">
       <h2 className="section-title">Projects</h2>
       <Row className="card-container">
         {projects.personalProjects.map((project, index) => (

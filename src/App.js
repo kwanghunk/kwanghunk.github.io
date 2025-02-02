@@ -32,9 +32,8 @@ const App = () => {
       <div data-aos="fade-up">
         <TechStack />
       </div>
-      <div data-aos="fade-up">
-        <Contact />
-      </div>
+      
+      <Contact />
       <FloatingBar />
     </div>
   );

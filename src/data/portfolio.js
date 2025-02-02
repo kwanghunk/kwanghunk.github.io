@@ -1,9 +1,8 @@
 const mainpage = {
 	title: "안녕하세요👋, 신입 풀스택 개발자 김광훈입니다!",
 	contents: [
-		"2024년 05월 부터 2024년 11월 까지 Java 풀스택 과정 교육을 수료하고...",
-		"수료 후 수강생 대상으로 팀을 꾸려 팀장으로 프로젝트를 진행한 경험이...",
-		"아키텍쳐 설계와 api 설계 등의 관심이 많고, 공식사이트에서 모르는 아키텍...",
+		"2024년 05월 부터 2024년 11월 까지 Java 풀스택 과정 교육을 이수했으며, 수료 후 공부를 위해 수강생 몇 명과 팀을 꾸려 팀장으로 토이 프로젝트를 6주 간 진행한 경험이 있습니다.",
+		"세 번의 프로젝트를 진행하며 아키텍쳐 구성도와 소프트웨어 설계 등의 관심이 많아 공식사이트에서 모르는 아키텍처를 ",
 		"8년간 직업군인으로 일하며 사회생활, 협업 등의 능력이 뛰어나고..."
 	],
 	name: ["이름", "생년월일", "경력", "연락처", "이메일", "교육"],
@@ -94,18 +93,6 @@ const projects = { // 모바일: short | 노트북, 데스크탑: description, t
 	]
 }
 
-const experience = {
-	title: "교육과정",
-	experiences: [
-		{
-			title: "의료 API 연동 Java 풀스택 과정(6개월)",
-			company: "더조은 아카데미 강남점",
-			duration: "2024년 05월 - 2024년 11월",
-			description: "Java, React 중심의 RESTful API 풀스택 교육 과정"
-		}
-	]
-}
-
 const skills = {
 	title: "Skills",
 	mySkills: [
@@ -164,4 +151,19 @@ const skills = {
 	]
 }
 
-export { mainpage, home, projects, experience, skills };
+const contact = {
+	title: "kwanghunk",
+	content: "Thank you for visiting my portfolio.",
+	kakao: "http://pf.kakao.com/_xlFBKn/chat",
+	github: "https://github.com/kwanghunk",
+	youtube: "https://www.youtube.com/channel/UCJnFBieyKEnZ1pwvsxzFTRA"
+}
+
+const floatingbar = {
+	kakao: "http://pf.kakao.com/_xlFBKn/chat",
+	github: "https://github.com/kwanghunk",
+	youtube: "https://www.youtube.com/channel/UCJnFBieyKEnZ1pwvsxzFTRA",
+	src: [ "float_kakao", "float_github", "float_youtube" ],
+	top: "#MainPage"
+}
+export { mainpage, home, projects, skills, contact, floatingbar };

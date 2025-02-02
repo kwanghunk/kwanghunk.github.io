@@ -8,7 +8,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 const MainPage = () => {
   return (
-    <Container fluid className="mainpage-container">
+    <Container fluid id="top" className="mainpage-container">
       {/* Carousel 슬라이드 */}
       <Carousel controls={true} indicators={true} interval={50000} className="mainpage-carousel" variant="dark">
         {/* 1번 슬라이드 - 자기소개 */}
