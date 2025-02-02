@@ -1,30 +1,40 @@
+import { IoCalendarClear, IoCall, IoMail, IoPerson, IoSchool } from "react-icons/io5"
+
 const mainpage = {
 	title: "안녕하세요👋, 신입 풀스택 개발자 김광훈입니다!",
 	contents: [
-		"2024년 05월 부터 2024년 11월 까지 Java 풀스택 과정 교육을 이수했으며, 수료 후 공부를 위해 수강생 몇 명과 팀을 꾸려 팀장으로 토이 프로젝트를 6주 간 진행한 경험이 있습니다.",
-		"세 번의 프로젝트를 진행하며 아키텍쳐 구성도와 소프트웨어 설계 등의 관심이 많아 공식사이트에서 모르는 아키텍처를 ",
-		"8년간 직업군인으로 일하며 사회생활, 협업 등의 능력이 뛰어나고..."
+		"저는 2024년 05월부터 11월 까지 6개월간 Java 풀스택 과정 교육을 이수하며, 실무 중심의 개발 역량을 길렀습니다,\n수료 후에도 학습을 지속하며, 수강생들과 토이 프로젝트를 기획/개발하며 팀장 역할을 수행했습니다.",
+		"총 세 번의 프로젝트를 통해 아키텍쳐 설계와 소프트웨어 구조에 깊은 관심을 가지게 되었고,\n공식 문서를 탐독하며 시스템 설계에 대한 이해도를 지속적으로 향상시켰습니다.",
+		"8년간 직업군인으로서 강한 책임과과 조직 내 협업 능력을 길러왔으며,\n이를 기반으로 개발팀에서도 원활한 소통과 협업을 기여할 수수 있습니다."
 	],
-	name: ["이름", "생년월일", "경력", "연락처", "이메일", "교육"],
-	text: ["김광훈", "1994.12.17", "신입", "010-8668-9294", "hosookkh@gmail.com", "더조은 강남점 Java 풀스택 6개월"]
+	profileInfo: [
+			{ icon: <IoPerson />, title: "이름", text: "김광훈" },
+			{ icon: <IoCalendarClear />, title: "생년월일", text: "1994.12.17" },
+			{ icon: <IoMail />, title: "이메일", text: "hosookkh@gmail.com" },
+			{ icon: <IoSchool />, title: "경력", text: "신입" },
+			{ icon: <IoCall />, title: "연락처", text: "010-8668-9294" },
+			{ icon: <IoSchool />, title: "교육", text: "더조은 강남점 Java 풀스택 6개월" }
+	],
 }
-
 const home = {
 	possessionAbility: [
 		{
 			title: "Backend Engineering",
 			description: [
-				"3개의 협업 프로젝트 개발 경험",
-				"Spring framwork, JPA or Query 기반으로 간단한 Backend API 서버 자체 개발 가능",
-				"TDD 개발 방식과 CI/CD 자동 배포를 통한 안정적인 서버 관리와 개발 가능 ",
-				"자체 AWS 서비스 배포 작업 경험(EC2)"
+				"3개의 협업 프로젝트에서 백엔드 개발 담당, 설계부터 구현까지 경험",
+				"Spring framwork, JPA or Query 을 활용한 RESTful API 개발 경험",
+				"TDD 기반의 개발 프로세스를 경험하고, Postman 및 Mockito를 활용한 테스트 수행",
+				"CI/CD를 적용하여 자동 배포 환경 구축 경험 (GitHub Actions)",
+				"AWS EC2에 직접 배포 및 운영 경험, 기본적인 서버 관리 가능"
 			]
 		},
 		{
 			title: "Software Development",
 			description: [
-				"프로젝트 팀장으로 소프트웨어 아키텍처와 소프트웨어 설계 경험",
-				"Postman, Mockito 등을 이용한 테스트 수행 경험"
+				"프로젝트 팀장으로서 요구사항 분석, 기술 스택 선정, 소프트웨어 아키텍처 설계 경험",
+				"DDD 및 Layered Architecture를 적용한 프로젝트 진행 경험",
+				"Postman, Mockito를 활용한 API 및 단위 테스트 수행 경험",
+				"Git Flow 전략을 활용한 협업 경험 및 코드 리뷰 문화 적용 경험"
 			]
 		}
 	],

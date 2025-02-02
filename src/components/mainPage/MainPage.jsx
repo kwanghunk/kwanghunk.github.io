@@ -3,7 +3,6 @@ import { Carousel, Container } from "react-bootstrap";
 import { mainpage } from "../../data/portfolio";
 import "./MainPage.css";
 import profileImage from "../../asset/img/profile.jpg";
-import { IoPerson, IoCalendarClear, IoSchool, IoCall, IoMail } from "react-icons/io5";
 import { FaArrowDown } from "react-icons/fa";
 
 const MainPage = () => {
@@ -16,49 +15,33 @@ const MainPage = () => {
           <div className="slide-content">
             <h1>{mainpage.title}</h1>
             {mainpage.contents.map((content, index) => (
-              <p key={index}>{content}</p>
+              <p key={index}>
+                {content.split("\n").map((line, idx) => (
+                  <React.Fragment key={idx}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
             ))}
           </div>
         </Carousel.Item>
 
         {/* 2번 슬라이드 - 사진 & 인적사항 */}
         <Carousel.Item>
-        <div className="profile-slide">
+          <div className="profile-slide">
             <div className="profile-left">
               <img src={profileImage} alt="Profile" className="profile-image" />
             </div>
             <div className="profile-right">
               <div className="info-grid">
-                <div className="info-item">
-                  <IoPerson className="icon" />
-                  <div className="name"><strong>{mainpage.name[0]}</strong></div>
-                  <div className="text">{mainpage.text[0]}</div>
-                </div>
-                <div className="info-item">
-                  <IoCalendarClear className="icon" />
-                  <div className="name"><strong>{mainpage.name[1]}</strong></div>
-                  <div className="text">{mainpage.text[1]}</div>
-                </div>
-                <div className="info-item">
-                  <IoSchool className="icon" />
-                  <div className="name"><strong>{mainpage.name[2]}</strong></div>
-                  <div className="text">{mainpage.text[2]}</div>
-                </div>
-                <div className="info-item">
-                  <IoCall className="icon" />
-                  <div className="name"><strong>{mainpage.name[3]}</strong></div>
-                  <div className="text">{mainpage.text[3]}</div>
-                </div>
-                <div className="info-item">
-                  <IoMail className="icon" />
-                  <div className="name"><strong>{mainpage.name[4]}</strong></div>
-                  <div className="text">{mainpage.text[4]}</div>
-                </div>
-                <div className="info-item">
-                  <IoSchool className="icon" />
-                  <div className="name"><strong>{mainpage.name[5]}</strong></div>
-                  <div className="text">{mainpage.text[5]}</div>
-                </div>
+                {mainpage.profileInfo.map((item, index) => (
+                  <div className="info-item" key={index}>
+                    <div className="icon">{item.icon}</div>
+                    <div className="name">{item.title}</div>
+                    <div className="text">{item.text}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
