@@ -44,16 +44,16 @@ const home = {
 	email: "hosookkh@gmail.com"
 }
 
-const projects = { // 모바일: short | 노트북, 데스크탑: description, techDetail
+const projects = {
 	personalProjects: [
 		{
 			title: "ECR",
 			src: "semiProjectMain.gif",
-			short: "방탈출 카페 종합 스마트 스토어", // 모바일 화면 시 출력
-			description: "제휴업체들의 방탈출 카페 정보를 한 사이트에서 확인해보세요", // 노트북, 데스크탑 화면 시 출력
+			short: "방탈출 카페 종합 스마트 스토어",
+			description: "제휴업체들의 방탈출 카페 정보를 한 곳에서 확인하고, 예약까지 간편하게 진행할 수 있습니다",
 			techDetail: [
-				"Spring Security와 Redux를 사용하여 보안과 상태를 관리합니다.",
-				"transactional을 사용한 동시성 제어를 통해 안정적인 예약 시스템이 장점입니다."
+				"**Spring Security**와 **Redux**를 활용하여 보안과 상태를 효율적으로 관리",
+				"**@transactional**을 사용한 동시성 제어로 **안정적인 예약 시스템** 구현"
 			],
 			"technologies": [
 				"https://img.shields.io/badge/Java-ED8B00?style=for-the-flag&logo=java&logoColor=white",
@@ -68,10 +68,10 @@ const projects = { // 모바일: short | 노트북, 데스크탑: description, t
 			title: "HealScope",
 			src:"finalProjectMain.gif",
 			short: "PACS(의료영상정보전달시스템)",
-			description: "사용자 친화적 PACS 시스템으로 조회, 영상조작, 전송이 편리합니다.",
+			description: "사용자 친화적 PACS 시스템을 구축하여 의료 영상 조회, 조작, 전송을 손쉽게 할 수 있습니다",
 			techDetail: [
-				"대규모 의료 데이터를 페이지네이션을 사용하여 조회 성능 향상",
-				"의료용 API Cornerstone을 사용하여 사용자 친화적 UIUX를 구현"
+				"**대규모 의료 데이터**를 페이지네이션 기법으로 최적화하여 조회 성능 향상",
+				"**Cornerstone API**를 활용하여 **직관적인 의료 영상 조작 UI/UX** 구현"
 			],
 			"technologies": [
 				"https://img.shields.io/badge/Java-ED8B00?style=for-the-flag&logo=java&logoColor=white",
@@ -86,11 +86,11 @@ const projects = { // 모바일: short | 노트북, 데스크탑: description, t
 			title: "DECOBET",
 			src:"semiProjectMain.gif",
 			short: "주니어 개발자 코드 번역기",
-			description: "주니어 개발자의 코드 이해를 돕고 학습 효율성을 향상시키는 웹 애플리케이션입니다. ",
+			description: "주니어 개발자의 코드 이해를 돕고 학습 효율성을 높이는 웹 애플리케이션입니다",
 			techDetail: [
-				"Spring Security와 JWT의 RTR전략을 사용하여 보안 강화",
-				"9개의 프로그래밍 언어를 지원하며 입력된 코드 형식의 번역된 코드를 반환",
-				"REST API를 활용하여 데이터 교환을 간소화하였으며, 표준화된 설계로 유지보수성과 확장성을 고려"
+				"**Spring Security**와 **JWT**의 **RTR전략**을 적용하여 보안 강화",
+				"**9개의 프로그래밍 언어**를 지원하며, 입력된 코드 형식을 번역하여 반환",
+				"**REST API** 기반의 데이터 교환을 통해 **표준화된 설계로 유지보수성, 확장성** 고려"
 			],
 			"technologies": [
 				"https://img.shields.io/badge/Java-ED8B00?style=for-the-flag&logo=java&logoColor=white",

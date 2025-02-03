@@ -27,22 +27,32 @@ const Projects = () => {
                 <Card.Title className="project-title">{project.title}</Card.Title>
                 <Card.Text className="project-short">{project.short}</Card.Text>
                 <Card.Text className="project-description">{project.description}</Card.Text>
+                
                 {project.techDetail.map((td, idx) => (
-                  <Card.Text key={idx} className="project-tech-detail">{td}</Card.Text>
+                  <Card.Text key={idx} className="project-tech-detail">
+                    {td.split(/(\*\*.*?\*\*)/g).map((part, subIdx) =>
+                      part.startsWith("**") && part.endsWith("**") ? (
+                        <b key={subIdx}>{part.replace(/\*\*/g, "")}</b>
+                      ) : (
+                        part
+                      )
+                    )}
+                  </Card.Text>
                 ))}
-                <div className="project-technologies">
-                  {project.technologies.map((badge, idx) => (
-                    <img key={idx} src={badge} alt="tech-badge" className="tech-badge" />
-                  ))}
-                </div>
-
-                <div className="project-links">
-                  <a href={project.github} target="_blank" rel="nooperner noreferrer" className="project-icon">
-                    <IoLogoGithub size={30} />
-                  </a>
-                  <a href={project.demo} target="_blank" rel="nooperner noreferrer" className="project-icon">
-                    <IoLogoYoutube size={30} />
-                  </a>
+                <div className="project-footer">
+                  <div className="project-technologies">
+                    {project.technologies.map((badge, idx) => (
+                      <img key={idx} src={badge} alt="tech-badge" className="tech-badge" />
+                    ))}
+                  </div>
+                  <div className="project-links">
+                    <a href={project.github} target="_blank" rel="nooperner noreferrer" className="project-icon">
+                      <IoLogoGithub size={30} />
+                    </a>
+                    <a href={project.demo} target="_blank" rel="nooperner noreferrer" className="project-icon">
+                      <IoLogoYoutube size={30} />
+                    </a>
+                  </div>
                 </div>
               </Card.Body>
             </Card>
