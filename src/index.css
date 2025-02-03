@@ -1,15 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Nanum+Square:wght@400;700&family=Nanum+Pen+Script&display=swap');
 
+/* 기본 설정 */
 body {
   margin: 0;
-  font-family: 'Nanum Square', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   background-color: #f8f9fa;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 제목 스타일 */
+h1, h2, h3 {
+  font-family: 'Nanum Square', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* 본문 스타일 */
+p, span, li, a {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1rem;
+}
+
+/* 코드 블록 */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* 네비게이션 폰트 */
+.navbar {
+  font-family: 'Nanum Square', sans-serif;
+}
+
+/* 버튼 폰트 */
+button {
+  font-family: 'Nanum Square', sans-serif;
+  font-weight: bold;
+}
+

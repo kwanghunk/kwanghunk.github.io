@@ -17,7 +17,13 @@ const Home = () => {
                 <ul className="ability-list">
                   {ability.description.map((desc, idx) => (
                     <li key={idx} className="ability-item">
-                      {desc}
+                      {desc.split(/(\*\*.*?\*\*)/g).map((part, subIdx) =>
+                        part.startsWith("**") && part.endsWith("**") ? (
+                          <b key={subIdx}>{part.replace(/\*\*/g, "")}</b>
+                        ) : (
+                          part
+                        )
+                      )}
                     </li>
                   ))}
                 </ul>

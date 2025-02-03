@@ -18,7 +18,13 @@ const MainPage = () => {
               <p key={index}>
                 {content.split("\n").map((line, idx) => (
                   <React.Fragment key={idx}>
-                    {line}
+                    {line.split(/(\*\*.*?\*\*)/g).map((part, subIdx) =>
+                      part.startsWith("**") && part.endsWith("**") ? (
+                        <b key={subIdx}>{part.replace(/\*\*/g, "")}</b>
+                      ) : (
+                        part
+                      )
+                    )}
                     <br />
                   </React.Fragment>
                 ))}

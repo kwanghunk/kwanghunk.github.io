@@ -13,7 +13,7 @@ import TechStack from './components/techstack/TechStack';
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 3000, // 애니메이션 지속 시간(1초)
+      duration: 1500, // 애니메이션 지속 시간(1초)
       easing: "ease-in-out", // 부드러운 전환 효과
     })
   }, []);

@@ -1,9 +1,11 @@
+/* Home 컴포넌트 컨테이너 */
 .home-container {
   margin-top: 150px;
   padding: 50px 20px;
   background-color: #f8f9fa;
 }
 
+/* 제목 스타일 */
 .section-title {
   text-align: center;
   font-size: 2rem;
@@ -12,67 +14,75 @@
   margin-bottom: 40px;
 }
 
+/* 컨테이너 배치 */
+.ability-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+  gap: 30px;
+}
+.ability-container > div:nth-child(odd) {
+  align-self: flex-start;
+}
+.ability-container > div:nth-child(even) {
+  align-self: flex-end;
+}
+
+/* 보유 역량 카드 스타일 */
 .ability-card {
   border: none;
   background-color: #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-bottom: 30px;
-  display: inline-block;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 1% 0;
+  transition: all 0.3s ease-in-out;
+  width: fit-content; /* 내부 내용에 맞게 자동 크기 조절 */
+  max-width: 100%; /* 너무 길어지지 않도록 제한 */
+  text-align: left;
+}
+.ability-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.ability-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.ability-container > div:nth-child(odd) {
-  margin-left: 40px;
-  align-self: flex-start;
-}
-
-.ability-container > div:nth-child(even) {
-  margin-right: 40px;
-  align-self: flex-end;
-}
-
+/* 역량 카드 타이틀 */
 .ability-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   color: #007BFF;
   margin-bottom: 20px;
 }
 
+/* 역량 리스트 스타일 */
 .ability-list {
   list-style-type: disc;
   padding-left: 20px;
   color: #555;
-  font-size: 1.2rem;
 }
 
+/* 리스트 항목 강조 */
 .ability-item {
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
+/* 연락처 정보 스타일 */
 .contact-info {
   text-align: left;
   margin-top: 40px;
   font-size: 1.2rem;
 }
 
+/* 연락처 아이콘 스타일 */
 .contact-link {
   color: #007BFF;
   text-decoration: none;
   font-weight: bold;
   margin-left: 20px;
+  transition: transform 0.3s ease-in-out;
 }
-
 .contact-link:hover {
-  text-decoration: underline;
-}
-
-.divider {
-  margin: 0 10px;
-  color: #333;
+  transform: scale(1.2);
+  color: #0056b3;
 }
