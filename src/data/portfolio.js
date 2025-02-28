@@ -84,13 +84,13 @@ const projects = {
 		},
 		{
 			title: "DECOBET",
-			src:"semiProjectMain.gif",
-			short: "주니어 개발자 코드 번역기",
+			src:"DECOBET.jpg",
+			short: "주니어 개발자 코드 번역기(조기 종료)",
 			description: "주니어 개발자의 코드 이해를 돕고 학습 효율성을 높이는 웹 애플리케이션입니다",
 			techDetail: [
-				"**Spring Security**와 **JWT**의 **RTR전략**을 적용하여 보안 강화",
-				"**9개의 프로그래밍 언어**를 지원하며, 입력된 코드 형식을 번역하여 반환",
-				"**REST API** 기반의 데이터 교환을 통해 **표준화된 설계로 유지보수성, 확장성** 고려"
+				"Spring Security와 **JWT 인증 기반의 사용자 인증 시스템 구축**",
+				"**프로그래밍 언어**를 지원하며, 입력된 코드 형식을 번역하여 반환",
+				"REST API 설계를 통해 **표준화된 데이터 교환 및 유지보수성 향상**"
 			],
 			"technologies": [
 				"https://img.shields.io/badge/Java-ED8B00?style=for-the-flag&logo=java&logoColor=white",
@@ -99,6 +99,26 @@ const projects = {
 				"https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-flag&logo=mysql&logoColor=white"
 			],
 			github: "https://github.com/kwanghunk/Third-WEB-Project",
+			demo: "",
+		},
+		{
+			title: "DECOBET v2",
+			src:"DECOBETV2.gif",
+			short: "주니어 개발자 코드 번역기(리빌딩)",
+			description: "주니어 개발자의 코드 이해를 돕고 보안 강화 및 기능확장을 목표로 한 리빌딩 프로젝트입니다",
+			techDetail: [
+				"**Spring Security와 JWT 기반의 Refresh Token Rotation(RTR) 전략 적용**을 통한 보안 강화",
+				"**Redis 기반 Refresh Token 검증** 및 세션 만료 처리",
+				"비회원 사용자 **IP 기반 기능 제한**"
+			],
+			"technologies": [
+				"https://img.shields.io/badge/Java-ED8B00?style=for-the-flag&logo=java&logoColor=white",
+				"https://img.shields.io/badge/SpringSecurity-6DB33F?style=for-the-flag&logo=springsecurity&logoColor=white",
+				"https://img.shields.io/badge/json%20web%20tokens-%23000000.svg?&style=for-the-flag&logo=json%20web%20tokens&logoColor=white",
+				"https://img.shields.io/badge/Redis-%23DC382D.svg?&style=for-the-flag&logo=redis&logoColor=white",
+				"https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-flag&logo=mysql&logoColor=white"
+			],
+			github: "https://github.com/kwanghunk/TEC-WEB-Project",
 			demo: "",
 		}
 	]
