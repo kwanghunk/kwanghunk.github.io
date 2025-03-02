@@ -1,0 +1,42 @@
+/* 컨택트 전체 컨테이너 */
+.contact-container {
+  margin-top: 100px;
+  padding: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* 컨택트 제목 */
+.contact-title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #FFC107;
+  text-shadow: 2px 2px 8px rgba(255, 193, 7, 0.7);
+}
+
+/* 프로젝트 카드 컨테이너 */
+.contact-content {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-icon,
+.contact-icon .icon {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  filter: invert(100%);
+  text-decoration: none;
+}
+
+.icon:hover {
+  transform: scale(1.2) translateY(-5px);
+}

@@ -1,0 +1,68 @@
+.pdf-modal {
+  width: 80vw;
+  max-width: 80vw;
+  height: 90vh;  /* 세로 크기 조정 */
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-viewer-container {
+  text-align: center;
+  padding: 10px;
+}
+
+/* PDF 로딩 화면 */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* PDF 컨트롤 버튼 */
+.pdf-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* 썸네일 컨테이너 */
+.pdf-thumbnail-container {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px;
+  justify-content: flex-start;;
+  margin-bottom: 10px;
+}
+
+/* 썸네일 스타일 */
+.pdf-thumbnail {
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pdf-thumbnail.active {
+  border: 2px solid #007BFF;
+  transform: scale(1.2);
+}
+
+/* PDF 본문 */
+.pdf-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* PDF 오류 메시지 */
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+  padding: 20px;
+}

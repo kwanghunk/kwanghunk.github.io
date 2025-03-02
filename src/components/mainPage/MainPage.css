@@ -1,0 +1,207 @@
+/* 메인 페이지 전체 스타일 */
+.mainpage-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../asset/img/mainpagebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Carousel 슬라이드 스타일 */
+.mainpage-carousel {
+  width: 80%;
+  max-width: 1320px;
+  border-radius: 20px;
+  border: 3px #0056B3 solid;
+  background-color: #f8f9fa;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+
+/* variant controls 위치조정 */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+.carousel-indicators {
+  height: height 1%
+}
+
+/* 슬라이드 컨텐츠 스타일 */
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  height: 100%;
+  max-width: 80%; 
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* 제목 스타일 */
+.slide-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 본문 스타일 */
+.slide-content p {
+  font-size: 1.3rem;
+  color: #444;
+  line-height: 1.6;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* 프로필 슬라이드 레이아웃 */
+.profile-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+}
+
+/* 프로필 정보 */
+.profile-left, .profile-right {
+  display: inline-flex; /* 자식 요소의 크기에 맞게 부모 크기를 조정 */
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* 부모 요소의 여백 */
+  width: fit-content; /* 자식 요소에 맞춰 너비 자동 조정 */
+}
+
+/* 프로필 이미지 */
+.profile-image {
+  width: 220px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 프로필 내용 그리드 */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 10px;
+  justify-items: center;
+  width: fit-content; /* 내용 크기에 맞게 너비 조정 */
+  max-width: 100%;
+}
+
+/* 프로필 내용 */
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.icon {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+.name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.text {
+  font-size: 1.3rem;
+  color: #444;
+}
+
+/* 아래 화살표 버튼 스타일 */
+.arrow-down {
+  border-radius: 15%;
+  border: 4px #555 solid;
+  background-color: black;
+  opacity: 0.8;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+.arrow-down a {
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.arrowicon {
+  transition: all 0.3s ease-in-out;
+  color: #555;
+}
+.arrow-down p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007BFF;
+  margin: 0;
+}
+/* 🔹 화살표 버튼 hover 효과 */
+.arrowicon:hover {
+  color: #FFC107;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Container 크기 고정 */
+  .mainpage-container {
+    max-width: 95%;
+    height: 500px; /* 고정 높이 */
+    overflow: hidden;
+  }
+
+  /* 텍스트가 많을 경우 스크롤 */
+  .slide-content {
+    height: 400px; /* 내부 컨텐츠 높이 제한 */
+    overflow-y: auto; /* 세로 스크롤 적용 */
+    padding: 10px; /* 내부 패딩 추가 */
+  }
+
+  /* 제목 크기 조정 */
+  .slide-content h1 {
+    font-size: 1.5rem;
+  }
+
+  /* 내용 크기 조정 */
+  .slide-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* 🔹 arrow-down 버튼 크기 축소 */
+  .arrow-down {
+    bottom: 10px; /* 버튼 위치 조정 */
+  }
+
+  .arrow-down .arrowicon {
+    font-size: 20px; /* 작은 버튼 크기 */
+  }
+
+  .arrow-down p {
+    font-size: 0.8rem; /* 버튼 텍스트 크기 줄이기 */
+  }
+}

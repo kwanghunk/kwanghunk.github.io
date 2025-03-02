@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#home,
+#projects,
+#tech-stack,
+#contact {
+  scroll-margin-top: 180px;
+}
