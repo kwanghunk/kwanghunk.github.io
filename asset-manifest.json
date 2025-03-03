@@ -1,12 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.2d88180d.css",
-    "main.js": "/static/js/main.3bff9e2e.js",
+    "main.js": "/static/js/main.bde9758f.js",
     "static/js/488.1446b851.chunk.js": "/static/js/488.1446b851.chunk.js",
     "static/media/finalProjectMain.gif": "/static/media/finalProjectMain.a71197377c5eceaf739b.gif",
     "static/media/DECOBETV2.gif": "/static/media/DECOBETV2.d18af76b52c6096e8a77.gif",
     "static/media/semiProjectMain.gif": "/static/media/semiProjectMain.6467ed3dcddf8fcd0f7c.gif",
-    "static/media/portfolio.pdf": "/static/media/portfolio.363a8b843ecf1d04d9c3.pdf",
+    "static/media/portfolio.pdf": "/static/media/portfolio.b40fe3a09c8e84686fb7.pdf",
+    "static/media/DECOBETV2PDF.pdf": "/static/media/DECOBETV2PDF.075207af4725e03a3b5c.pdf",
+    "static/media/HealScopePDF.pdf": "/static/media/HealScopePDF.d8cd377971dc8407fff7.pdf",
+    "static/media/ECRPDF.pdf": "/static/media/ECRPDF.ac97617b5c090d0009f6.pdf",
+    "static/media/DECOBETPDF.pdf": "/static/media/DECOBETPDF.281f866b13f675765256.pdf",
+    "static/media/resume.pdf": "/static/media/resume.ecbf78da036c8c2816dc.pdf",
     "static/media/mainpagebg.jpg": "/static/media/mainpagebg.80dd3cc1558d32d49ee0.jpg",
     "static/media/DECOBET.jpg": "/static/media/DECOBET.d27d243ff5d561c41999.jpg",
     "static/media/profile.jpg": "/static/media/profile.43c15a25c1a376d62c45.jpg",
@@ -37,11 +42,11 @@
     "static/media/HTML.svg": "/static/media/HTML.c1bb84e022ca9d76984d.svg",
     "static/media/Oracle.svg": "/static/media/Oracle.45941c0194c45c532632.svg",
     "main.2d88180d.css.map": "/static/css/main.2d88180d.css.map",
-    "main.3bff9e2e.js.map": "/static/js/main.3bff9e2e.js.map",
+    "main.bde9758f.js.map": "/static/js/main.bde9758f.js.map",
     "488.1446b851.chunk.js.map": "/static/js/488.1446b851.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d88180d.css",
-    "static/js/main.3bff9e2e.js"
+    "static/js/main.bde9758f.js"
   ]
 }
