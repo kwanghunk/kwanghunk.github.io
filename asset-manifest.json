@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a03d9e91.css",
-    "main.js": "/static/js/main.87d48a6c.js",
+    "main.css": "/static/css/main.c8d1f3ca.css",
+    "main.js": "/static/js/main.36699d84.js",
     "static/js/17.5d086ab4.chunk.js": "/static/js/17.5d086ab4.chunk.js",
     "static/js/748.a286ae1d.chunk.js": "/static/js/748.a286ae1d.chunk.js",
     "static/js/536.b2c1a755.chunk.js": "/static/js/536.b2c1a755.chunk.js",
@@ -49,6 +49,7 @@
     "static/media/DECOBETPDF.pdf": "/static/media/DECOBETPDF.281f866b13f675765256.pdf",
     "static/media/resume.pdf": "/static/media/resume.e5844b2d567f45fdc587.pdf",
     "static/media/mainpagebg.jpg": "/static/media/mainpagebg.80dd3cc1558d32d49ee0.jpg",
+    "static/media/SiteLogo.png": "/static/media/SiteLogo.352e4e2587ff5c05c03f.png",
     "static/media/DECOBET.jpg": "/static/media/DECOBET.d27d243ff5d561c41999.jpg",
     "static/media/profile.jpg": "/static/media/profile.43c15a25c1a376d62c45.jpg",
     "static/media/MyBatis.svg": "/static/media/MyBatis.5dd2053e9950472b5c5b.svg",
@@ -81,8 +82,8 @@
     "static/media/CSS.svg": "/static/media/CSS.3ec320225ef851ed26cf.svg",
     "static/media/HTML.svg": "/static/media/HTML.c1bb84e022ca9d76984d.svg",
     "static/media/Oracle.svg": "/static/media/Oracle.45941c0194c45c532632.svg",
-    "main.a03d9e91.css.map": "/static/css/main.a03d9e91.css.map",
-    "main.87d48a6c.js.map": "/static/js/main.87d48a6c.js.map",
+    "main.c8d1f3ca.css.map": "/static/css/main.c8d1f3ca.css.map",
+    "main.36699d84.js.map": "/static/js/main.36699d84.js.map",
     "17.5d086ab4.chunk.js.map": "/static/js/17.5d086ab4.chunk.js.map",
     "748.a286ae1d.chunk.js.map": "/static/js/748.a286ae1d.chunk.js.map",
     "536.b2c1a755.chunk.js.map": "/static/js/536.b2c1a755.chunk.js.map",
@@ -117,7 +118,7 @@
     "195.1a97ec53.chunk.js.map": "/static/js/195.1a97ec53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a03d9e91.css",
-    "static/js/main.87d48a6c.js"
+    "static/css/main.c8d1f3ca.css",
+    "static/js/main.36699d84.js"
   ]
 }
